@@ -1,0 +1,40 @@
+/* Features */
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+
+  .item {
+    width: 270px;
+  }
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $second-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.feature-iconset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.feature-icon {
+  height: 70px;
+  width: 70px;
+}
