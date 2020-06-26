@@ -1,10 +1,23 @@
 /* Features */
 .feature-list {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  // display: flex;
+  // justify-content: space-between;
 
   .item {
-    width: 270px;
+    // width: 270px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   .title {
@@ -15,6 +28,11 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
   p {
     margin-top: 0;
@@ -28,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  // width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background: #f5f4fa;
