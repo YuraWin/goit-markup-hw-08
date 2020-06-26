@@ -1,4 +1,10 @@
 /* Our jobs */
+.section.job {
+  padding-top: 0px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .job-list {
   display: flex;
 

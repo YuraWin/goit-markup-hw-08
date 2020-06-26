@@ -190,6 +190,17 @@ a {
   }
 }
 
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 /* Global container for soclink*/
 .soc-container {
   width: 207px;
@@ -321,5 +332,123 @@ a {
 .feature-icon {
   height: 70px;
   width: 70px;
+}
+
+/* Our jobs */
+.section.job {
+  padding-top: 0px;
+}
+
+@media screen and (max-width: 1199px) {
+  .section.job {
+    display: none;
+  }
+}
+
+.job-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.job-list .item {
+  position: relative;
+  width: 370px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.job-list .item + .item {
+  margin-left: 30px;
+}
+
+.job-list img {
+  display: block;
+}
+
+.job-list .title {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 27px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Our team */
+.teamsection {
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.team-list > .item {
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .team-list > .item {
+    width: 354px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list > .item {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-list > .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.team-list .fototeam {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.team-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.team-list .vocation {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
 }
 /*# sourceMappingURL=main.css.map */
