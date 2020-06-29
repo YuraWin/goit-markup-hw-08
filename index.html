@@ -16,7 +16,12 @@
         <nav class="nav">
           <a href="#" class="logo"><span class="web-logo">Web</span> Studio</a>
           <!-- Кнопка меню для мобильной версии -->
-          <button class="menu-button" aria-expanded="false" data-menu-button>
+          <button
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
             <svg
               class="menu-button-icon"
               width="40px"
@@ -28,7 +33,7 @@
             </svg>
           </button>
 
-          <div class="menu-nav" data-menu>
+          <div class="menu-nav" id="menu-container" data-menu>
             <ul class="site-nav">
               <li class="item"><a href="./index.html" class="link current">Студия</a></li>
               <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
@@ -441,21 +446,20 @@
               </li>
             </ul>
           </form>
-        <!-- </div>
-        <p class="copyright">2020 | Developed by GoIT Students</p>
-      </div> -->
+        </div>
+      </div>
     </footer>
     <!-- Фон модалки -->
-    <!-- <div class="backdrop is-hidden" data-backdrop> -->
-    <!-- Модальное окно -->
-    <!-- <div class="modal">
+    <div class="backdrop is-hidden" data-backdrop>
+      <!-- Модальное окно -->
+      <div class="modal">
         <b class="regform-title">Оставьте свои данные, мы Вам перезвоним</b>
         <form class="js-speaker-form regform">
           <label class="regform-field">
             <input class="regform-input" type="text" name="user-name" placeholder=" " />
             <span class="regform-label">Имя</span>
             <svg class="regform-icon">
-              <use use href="./images/sprite.svg#icon-person-black"></use>
+              <use href="./images/sprite.svg#icon-person-black"></use>
             </svg>
           </label>
 
@@ -463,7 +467,7 @@
             <input class="regform-input" type="tel" name="user-tel" placeholder=" " />
             <span class="regform-label">Телефон</span>
             <svg class="regform-icon">
-              <use use href="./images/sprite.svg#icon-phone-black"></use>
+              <use href="./images/sprite.svg#icon-phone-black"></use>
             </svg>
           </label>
 
@@ -494,9 +498,13 @@
           </label>
           <button class="regform-submit" type="submit">Отправить</button>
         </form>
-        <button class="regform-close" data-close-modal></button>
+        <button class="regform-close" data-close-modal>
+          <svg width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-close-black"></use>
+          </svg>
+        </button>
       </div>
-    </div> -->
+    </div>
     <script src="./js/testinput.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>

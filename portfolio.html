@@ -15,34 +15,55 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="borderbot">
-      <div class="container main-nav">
-        <nav class="main-nav">
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
           <a href="#" class="logo"><span class="web-logo">Web</span> Studio</a>
-          <ul class="site-nav">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-            <li class="item"><a href="#" class="link">Контакты</a></li>
-          </ul>
+          <!-- Кнопка меню для мобильной версии -->
+          <button
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              class="menu-button-icon"
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-cross" href="./images/sprite.svg#icon-close_nav"></use>
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu_nav"></use>
+            </svg>
+          </button>
+
+          <div class="menu-nav" id="menu-container" data-menu>
+            <ul class="site-nav">
+              <li class="item"><a href="./index.html" class="link">Студия</a></li>
+              <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+              <li class="item"><a href="#" class="link">Контакты</a></li>
+            </ul>
+
+            <ul class="auth-nav">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="link">
+                  <svg class="auth-nav-icon" width="16px" height="12px">
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="item">
+                <a href="tel:+38096111111" class="link">
+                  <svg class="auth-nav-icon" width="10px" height="16px">
+                    <use href="./images/sprite.svg#icon-tel"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <ul class="auth-nav">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="auth-nav-icon" width="16px" height="12px">
-                <use href="./images/sprite.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="item">
-            <a href="tel:+38096111111" class="link">
-              <svg class="auth-nav-icon" width="10px" height="16px">
-                <use href="./images/sprite.svg#icon-tel"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -322,9 +343,9 @@
             </ul>
           </form>
         </div>
-        <p class="copyright">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
     <script src="./js/testinput.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1,11 +1,24 @@
 /* Button filter */
 .works-select {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  // justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
 
-  .item + .item {
-    margin-left: 8px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+  .item {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+  .item:not(:last-child) {
+    margin-right: 8px;
   }
 }
 .buttonselect {
