@@ -82,11 +82,18 @@
               <a href="#">
                 <div class="works-imagetext">
                   <img
-                    src="./images/work1.jpg"
                     class="works-image"
                     alt="работы"
-                    width="370"
-                    height="294"
+                    src="./images/work1_370.jpg"
+                    srcset="
+                      ./images/work1_354.jpg    354w,
+                      ./images/work1_354_2x.jpg 708w,
+                      ./images/work1_370.jpg    370w,
+                      ./images/work1_370_2x.jpg 740w,
+                      ./images/work1_450.jpg    450w,
+                      ./images/work1_450_2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100wv"
                   />
                   <p class="works-declar">
                     Технокряк это современная площадка распространения коронавируса. Компании
@@ -100,7 +107,7 @@
                 </div>
               </a>
             </li>
-            <li class="item">
+            <!-- <li class="item">
               <a href="#">
                 <div class="works-imagetext">
                   <img
@@ -117,7 +124,7 @@
                   </p>
                 </div>
                 <div class="work-suite">
-                  <h2 class="works-title">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="works-title">Постер New Orlean vs Golden ...</h2>
                   <p class="works-type">Дизайн</p>
                 </div>
               </a>
@@ -275,7 +282,7 @@
                   <p class="works-type">Приложение</p>
                 </div>
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>

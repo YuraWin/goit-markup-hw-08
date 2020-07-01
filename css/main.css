@@ -669,7 +669,7 @@ a {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .feature-list .title {
     text-align: left;
   }
@@ -1225,12 +1225,18 @@ a {
 
 /* Our works */
 .works-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: -15px;
+  display: block;
+}
+
+@media screen and (min-width: 480px) {
+  .works-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .works-card a {
@@ -1238,8 +1244,6 @@ a {
 }
 
 .works-card .item {
-  width: 370px;
-  margin: 15px;
   border: 1px solid #eeeeee;
   border-radius: 5px;
   overflow: hidden;
@@ -1252,6 +1256,7 @@ a {
 @media screen and (min-width: 480px) {
   .works-card .item {
     width: 450px;
+    margin: 15px;
   }
 }
 
@@ -1272,6 +1277,12 @@ a {
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (max-width: 479px) {
+  .works-card .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .works-imagetext {
   position: relative;
   overflow: hidden;
@@ -1279,8 +1290,6 @@ a {
 
 .works-image {
   display: block;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .works-declar {
